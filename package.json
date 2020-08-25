@@ -4,10 +4,11 @@
   "description": "A localForage driver for userscripts to access the value storage of userscript engines e.g. Tampermonkey.",
   "main": "umd/index.js",
   "module": "es6/index.js",
+  "types": "types",
   "scripts": {
     "commit": "gitmoji -c",
     "lint": "eslint --ext .ts .",
-    "build:es6": "tsc",
+    "build:es6": "tsc && shx mv es6/*.d.ts types/",
     "build:umd": "webpack",
     "build": "npm run build:es6 && npm run build:umd",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -49,6 +50,7 @@
   "files": [
     "es6",
     "umd",
-    "lib"
+    "lib",
+    "types"
   ]
 }
