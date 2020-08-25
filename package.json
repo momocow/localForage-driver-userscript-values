@@ -1,0 +1,54 @@
+{
+  "name": "localforage-driver-userscript-values",
+  "version": "0.1.0",
+  "description": "A localForage driver for userscripts to access the value storage of userscript engines e.g. Tampermonkey.",
+  "main": "umd/index.js",
+  "module": "es6/index.js",
+  "scripts": {
+    "commit": "gitmoji -c",
+    "lint": "eslint --ext .ts .",
+    "build:es6": "tsc",
+    "build:umd": "webpack",
+    "build": "npm run build:es6 && npm run build:umd",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/momocow/localForage-driver-userscript-values.git"
+  },
+  "keywords": [
+    "localForage",
+    "driver"
+  ],
+  "author": "MomoCow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/momocow/localForage-driver-userscript-values/issues"
+  },
+  "homepage": "https://github.com/momocow/localForage-driver-userscript-values#readme",
+  "peerDependencies": {
+    "localforage": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/tampermonkey": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^3.10.0",
+    "eslint": "^7.7.0",
+    "eslint-config-standard-with-typescript": "^18.0.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "gitmoji-cli": "^3.2.10",
+    "localforage": "^1.9.0",
+    "shx": "^0.3.2",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "files": [
+    "es6",
+    "umd",
+    "lib"
+  ]
+}

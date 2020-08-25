@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "es6",
+    "target": "es6",
+    "moduleResolution": "node"
+  }
+}
