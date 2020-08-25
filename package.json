@@ -1,6 +1,6 @@
 {
   "name": "localforage-driver-userscript-values",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A localForage driver for userscripts to access the value storage of userscript engines e.g. Tampermonkey.",
   "main": "umd/index.js",
   "module": "es6/index.js",
