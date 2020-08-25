@@ -5,7 +5,7 @@ A localForage driver for userscripts to access the value storage of userscript e
 
 ```js
 const localForage = require('localforage')
-const UserScriptValues = require('localForage-driver-userscript-values')
+const UserScriptValues = require('localforage-driver-userscript-values')
 
 localForage.defineDriver(UserScriptValues) // can be used as sync functions
 localForage.setDriver(UserScriptValues.NAME)
